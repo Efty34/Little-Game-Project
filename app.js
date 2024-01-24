@@ -23,6 +23,7 @@ const getRandomWord = () => {
     currentWord = word;
     document.querySelector(".hint-text b").innerText = hint;
     wordDisplay.innerHTML = word.split("").map(( )=> `<li class="letter"></li>`).join("");
+    resetGame();
 }
 
 const gameOver = (isVictory) => {
